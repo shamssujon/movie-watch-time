@@ -1,10 +1,12 @@
-import logo from "./logo.svg";
 import "./App.css";
+import Header from "./components/Header/Header";
+import MovieSection from "./components/MovieSection/MovieSection";
 
 function App() {
     return (
         <div className="App">
-            <h1 className="text-primary">Hello React JS</h1>
+            <Header></Header>
+            <MovieSection></MovieSection>
         </div>
     );
 }

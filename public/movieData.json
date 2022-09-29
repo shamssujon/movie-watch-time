@@ -1,0 +1,44 @@
+[
+    {
+        "id": "ac16bf9b-1ed9-40cc-b54e-e1a15da93035",
+        "title": "The Shawshank Redemption",
+        "plot": "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.",
+        "runtime": "142",
+        "image": "https://m.media-amazon.com/images/M/MV5BMDFkYTc0MGEtZmNhMC00ZDIzLWFmNTEtODM1ZmRlYWMwMWFmXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_QL75_UX380_CR0,1,380,562_.jpg"
+    },
+    {
+        "id": "424a7f06-9dbf-48a4-bc55-a543257ddfb9",
+        "title": "The Godfather",
+        "plot": "The aging patriarch of an organized crime dynasty in postwar New York City transfers control of his clandestine empire to his reluctant youngest son.",
+        "runtime": "175",
+        "image": "https://m.media-amazon.com/images/M/MV5BM2MyNjYxNmUtYTAwNi00MTYxLWJmNWYtYzZlODY3ZTk3OTFlXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_QL75_UY562_CR8,0,380,562_.jpg"
+    },
+    {
+        "id": "0e309758-9282-4aad-a898-7deb989fee9a",
+        "title": "The Dark Knight",
+        "plot": "When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.",
+        "runtime": "152",
+        "image": "https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_QL75_UX380_CR0,0,380,562_.jpg"
+    },
+    {
+        "id": "66d4b514-b346-4a69-8303-09ae5cc51997",
+        "title": "Schindler's List",
+        "plot": "In German-occupied Poland during World War II, industrialist Oskar Schindler gradually becomes concerned for his Jewish workforce after witnessing their persecution by the Nazis.",
+        "runtime": "195",
+        "image": "https://m.media-amazon.com/images/M/MV5BNDE4OTMxMTctNmRhYy00NWE2LTg3YzItYTk3M2UwOTU5Njg4XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_QL75_UX380_CR0,4,380,562_.jpg"
+    },
+    {
+        "id": "7758c2c3-ef3e-4d00-ac33-70bcd5857d5f",
+        "title": "Forrest Gump",
+        "plot": "The presidencies of Kennedy and Johnson, the Vietnam War, the Watergate scandal and other historical events unfold from the perspective of an Alabama man with an IQ of 75, whose only desire is to be reunited with his childhood sweetheart.",
+        "runtime": "142",
+        "image": "https://m.media-amazon.com/images/M/MV5BYWY2MjE2NGQtZGNiMy00NThkLTlhZTAtMjFkNGMyMGJiZTJiXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_.jpg"
+    },
+    {
+        "id": "ffbce833-a6b2-448c-bdd1-4b76c0e0d0f9",
+        "title": "Fight Club",
+        "plot": "An insomniac office worker and a devil-may-care soap maker form an underground fight club that evolves into much more.",
+        "runtime": "139",
+        "image": "https://m.media-amazon.com/images/M/MV5BMmEzNTkxYjQtZTc0MC00YTVjLTg5ZTEtZWMwOWVlYzY0NWIwXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_FMjpg_UX1066_.jpg"
+    }
+]
