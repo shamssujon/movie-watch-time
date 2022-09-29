@@ -1,0 +1,6 @@
+.movie-card .ratio {
+    --bs-aspect-ratio: 120%;
+}
+.movie-card img {
+    object-fit: cover;
+}
