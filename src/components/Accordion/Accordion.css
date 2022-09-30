@@ -1,0 +1,8 @@
+.accordion-flush {
+    display: grid;
+    gap: 1rem;
+}
+
+.accordion-button {
+    font-size: inherit;
+}
