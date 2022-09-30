@@ -21,6 +21,12 @@ const MovieSection = () => {
         setSelectedMovies(newSelectedMovies);
     };
 
+    const timers = [5, 15, 30, 45, 60];
+    const [breakTime, setBreakTime] = useState(0);
+    const handleBreakTimeBtn = (time) => {
+        setBreakTime(time);
+    };
+
     return (
         <section className="section movie-section py-5">
             <div className="container">
@@ -42,8 +48,8 @@ const MovieSection = () => {
                         <div className="calculation-container bg-light rounded h-100 p-3 shadow-sm border">
                             <div className="position-sticky">
                                 <Profile></Profile>
-                                <BreakTime></BreakTime>
-                                <WatchTime selectedMovies={selectedMovies}></WatchTime>
+                                <BreakTime handleBreakTimeBtn={handleBreakTimeBtn} timers={timers}></BreakTime>
+                                <WatchTime selectedMovies={selectedMovies} breakTime={breakTime}></WatchTime>
                                 <div className="d-grid mt-5">
                                     <button className="btn btn-lg btn-primary rounded shadow-sm">
                                         Activity Completed
