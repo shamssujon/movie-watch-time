@@ -6,22 +6,22 @@ import "./MovieSection.css";
 import WatchTime from "../WatchTime/WatchTime";
 
 const MovieSection = () => {
+    // Load movies
     const [movies, setMovies] = useState([]);
-
     useEffect(() => {
         fetch("movieData.json")
             .then((res) => res.json())
             .then((data) => setMovies(data));
     }, []);
 
+    // Movie Selection
     const [selectedMovies, setSelectedMovies] = useState([]);
-
     const handleWatchBtnClick = (movie) => {
         const newSelectedMovies = [...selectedMovies, movie];
         setSelectedMovies(newSelectedMovies);
     };
 
-    const timers = [5, 15, 30, 45, 60];
+    // Break time
     const [breakTime, setBreakTime] = useState(0);
     const handleBreakTimeBtn = (time) => {
         setBreakTime(time);
@@ -48,8 +48,10 @@ const MovieSection = () => {
                         <div className="calculation-container bg-light rounded h-100 p-3 shadow-sm border">
                             <div className="position-sticky">
                                 <Profile></Profile>
-                                <BreakTime handleBreakTimeBtn={handleBreakTimeBtn} timers={timers}></BreakTime>
-                                <WatchTime selectedMovies={selectedMovies} breakTime={breakTime}></WatchTime>
+                                <BreakTime handleBreakTimeBtn={handleBreakTimeBtn}></BreakTime>
+                                <WatchTime
+                                    selectedMovies={selectedMovies}
+                                    breakTime={breakTime}></WatchTime>
                                 <div className="d-grid mt-5">
                                     <button className="btn btn-lg btn-primary rounded shadow-sm">
                                         Activity Completed
