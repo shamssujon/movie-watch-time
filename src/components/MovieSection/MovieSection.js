@@ -14,9 +14,11 @@ const MovieSection = () => {
             .then((data) => setMovies(data));
     }, []);
 
-    
-    const handleWatchBtnClick = () => {
-        console.log(movies);
+    const [selectedMovies, setSelectedMovies] = useState([]);
+
+    const handleWatchBtnClick = (movie) => {
+        const newSelectedMovies = [...selectedMovies, movie];
+        setSelectedMovies(newSelectedMovies);
     };
 
     return (
@@ -28,7 +30,10 @@ const MovieSection = () => {
                         <div className="movie-container">
                             <div className="movies row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4">
                                 {movies.map((movie) => (
-                                    <Movie key={movie.id} movie={movie} handleWatchBtnClick={handleWatchBtnClick}></Movie>
+                                    <Movie
+                                        key={movie.id}
+                                        movie={movie}
+                                        handleWatchBtnClick={handleWatchBtnClick}></Movie>
                                 ))}
                             </div>
                         </div>
@@ -38,7 +43,7 @@ const MovieSection = () => {
                             <div className="position-sticky">
                                 <Profile></Profile>
                                 <BreakTime></BreakTime>
-                                <WatchTime></WatchTime>
+                                <WatchTime selectedMovies={selectedMovies}></WatchTime>
                                 <div className="d-grid mt-5">
                                     <button className="btn btn-lg btn-primary rounded shadow-sm">
                                         Activity Completed

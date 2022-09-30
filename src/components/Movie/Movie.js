@@ -21,7 +21,10 @@ const Movie = ({ handleWatchBtnClick, movie }) => {
                     </p>
                 </div>
                 <div className="card-footer d-grid p-0">
-                    <button className="btn btn-lg btn-primary rounded-0" type="button" onClick={handleWatchBtnClick}>
+                    <button
+                        className="btn btn-lg btn-primary rounded-0"
+                        type="button"
+                        onClick={() => handleWatchBtnClick(movie)}>
                         Add to watchlist
                     </button>
                 </div>
