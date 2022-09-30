@@ -4,6 +4,7 @@ import Profile from "../Profile/Profile";
 import BreakTime from "../BreakTime/BreakTime";
 import "./MovieSection.css";
 import WatchTime from "../WatchTime/WatchTime";
+import Toast from "../Toast/Toast";
 
 const MovieSection = () => {
     // Load movies
@@ -52,11 +53,8 @@ const MovieSection = () => {
                                 <WatchTime
                                     selectedMovies={selectedMovies}
                                     breakTime={breakTime}></WatchTime>
-                                <div className="d-grid mt-5">
-                                    <button className="btn btn-lg btn-primary rounded shadow-sm">
-                                        Activity Completed
-                                    </button>
-                                </div>
+                                
+                                <Toast></Toast>
                             </div>
                         </div>
                     </div>
