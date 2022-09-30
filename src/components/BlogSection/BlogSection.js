@@ -5,7 +5,7 @@ const BlogSection = () => {
     return (
         <section className="section movie-section py-5">
             <div className="container">
-                <div className="text-bg-primary p-5 rounded">
+                <div className="text-bg-primary p-4 p-lg-5 rounded">
                     <h4 className="text-center mb-5">Frequently Asked Questions</h4>
                     <Accordion></Accordion>
                 </div>
