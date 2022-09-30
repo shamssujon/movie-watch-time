@@ -26,12 +26,20 @@ const MovieSection = () => {
     const [breakTime, setBreakTime] = useState(0);
     const handleBreakTimeBtn = (time) => {
         setBreakTime(time);
+        localStorage.setItem("break-time", time);
     };
+
+    useEffect(() => {
+        const storedTime = JSON.parse(localStorage.getItem("break-time"));
+        if (storedTime) {
+            setBreakTime(storedTime);
+        }
+    }, []);
 
     return (
         <section className="section movie-section py-5">
             <div className="container">
-                <h4 className="mb-5">Select movies to generate total watch time</h4>
+                <h4 className="mb-5">Select movies to generate total watch time </h4>
                 <div className="row g-4">
                     <div className="col-lg-8">
                         <div className="movie-container">
@@ -53,7 +61,7 @@ const MovieSection = () => {
                                 <WatchTime
                                     selectedMovies={selectedMovies}
                                     breakTime={breakTime}></WatchTime>
-                                
+
                                 <Toast></Toast>
                             </div>
                         </div>
