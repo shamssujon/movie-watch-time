@@ -1,9 +1,10 @@
 import React from "react";
 import "./Movie.css";
 
-const Movie = (props) => {
-    // console.log(props.movie);
-    const { title, image, plot, runtime } = props.movie;
+const Movie = ({ handleWatchBtnClick, movie }) => {
+    // console.log(props);
+    // const { handleWatchBtnClick, movie } = props;
+    const { title, image, plot, runtime } = movie;
     return (
         <div className="col movie">
             <div className="card movie-card bg-light shadow-sm h-100 overflow-hidden">
@@ -20,9 +21,9 @@ const Movie = (props) => {
                     </p>
                 </div>
                 <div className="card-footer d-grid p-0">
-                    <a href="/" className="btn btn-lg btn-danger rounded-0">
+                    <button className="btn btn-lg btn-primary rounded-0" type="button" onClick={handleWatchBtnClick}>
                         Add to watchlist
-                    </a>
+                    </button>
                 </div>
             </div>
         </div>

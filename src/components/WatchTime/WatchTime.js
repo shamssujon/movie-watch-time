@@ -8,13 +8,13 @@ const WatchTime = () => {
             <div className="bg-light p-3 rounded d-flex align-items-center justify-content-between mb-3">
                 <span className="fw-semibold">Total Watch Time: </span>
                 <span>
-                    <span className="text-primary fs-5 fw-bold">100</span> minutes
+                    <span className="text-danger fs-5 fw-bold">100</span> minutes
                 </span>
             </div>
             <div className="bg-light p-3 rounded d-flex align-items-center justify-content-between">
                 <span className="fw-semibold">Break Time: </span>
                 <span>
-                    <span className="text-primary fs-5 fw-bold">10</span> minutes
+                    <span className="text-danger fs-5 fw-bold">10</span> minutes
                 </span>
             </div>
         </div>
